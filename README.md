@@ -1,2 +1,2 @@
-# OBI
-Desafios da OBI solucionado em python
+# Desafios de Olímpiadas
+Desafios das Olímpiadas solucionado em python
