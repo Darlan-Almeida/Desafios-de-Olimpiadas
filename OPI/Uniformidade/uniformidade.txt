@@ -1,0 +1,15 @@
+Raphael está lendo um livro sobre competições de programação e precisa da sua ajuda para 
+resolver um problema de formatação. O livro possui palavras misturando letras maiúsculas e 
+minúsculas e está dificultando a leitura do livro. 
+O seu objetivo é ajudar Raphael resolvendo esse problema de formatação. Para cada palavra, 
+se a mesma tiver mais letras maiúsculas ou minúsculas, converter todas as letras da palavra 
+para maiúsculas ou minúsculas, respectivamente. Caso haja a mesma quantidade de letras 
+maiúsculas e minúsculas, converter todas as letras para minúsculas.
+Por exemplo, maTRIx deverá ser convertido para matrix já que possui a mesma 
+quantidade de letras maiúsculas e e minúsculas. HoUse deverá ser convertido para house, 
+e ViP deverá ser convertido para VIP.
+Entrada
+Cada caso de teste contém uma linha com a palavra s com no máximo tamanho de 100 
+caracteres do nosso alfabeto. 
+Saída
+Para cada caso de teste, imprima a palavra s na formatação sugerida por Raphael

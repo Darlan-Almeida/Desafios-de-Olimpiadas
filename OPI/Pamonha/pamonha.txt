@@ -1,0 +1,15 @@
+Abraão gosta muito do São João, em especial das comidas típicas como a Pamonha. Ele quer 
+comprar w pamonhas na padaria. Ele deverá pagar k reais pela a primeira pamonha, 2*k reais 
+pela segunda pamonha e assim por diante. Ou seja, para a i-ésima pamonha ele deverá pagar 
+i*k reais.
+Abraão tem n reais. Quantos reais ele deverá pegar emprestado dos seus pais para comprar 
+w pamonhas?
+Entrada
+Cada caso de teste contém três linhas números inteiros k, n, w (1 ≤ k, w ≤ 1.000, 0 ≤ n ≤ 109
+), 
+respectivamente, onde k representa o custo da pamonha, n representa quantos reais Abraão 
+possui, e w indica quantas pamonhas ele deseja comprar.
+Saída
+Para cada caso de teste, imprima a quantidade de reais que Abraão precisará pegar 
+emprestado dos seus pais. Caso não precise pegar dinheiro emprestado, imprima 0.
+
