@@ -8,8 +8,8 @@ while(True):
 
     while( i/2 < n):
         i += 1    
-        computador = int(input())
-        computadores.append(computador)
+        computador = input()
+        computadores.append(computador.split())
 
     splited = []
     len_l = len(computadores)
