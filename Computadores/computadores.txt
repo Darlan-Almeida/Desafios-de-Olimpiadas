@@ -1,0 +1,22 @@
+Valéria vai comprar computadores para os seus times do IFPB de maratona de programação 
+treinarem. Ela está discutindo sobre o preço e a qualidade dos mesmos. Valéria acha que 
+podem existir dois computadores A e B tal que o preço de A seja menor (não igual) do que o
+preço de B, e que a qualidade de A seja superior (não igual) a qualidade de B.
+A sua tarefa é dizer se a hipótese de Valéria é válida ou não. Você receberá a descrição de n 
+computadores e indicará se a hipótese é válida ou não.
+Entrada
+A primeira linha de cada caso de teste descreve um número inteiro n (1 ≤ n ≤ 105
+) 
+representando o número de computadores. As n linhas seguintes possuem dois números 
+inteiros ai e bi (1 ≤ ai, bi ≤ n) representando o preço e a qualidade do i-ésimo computador, 
+respectivamente. Quanto maior o número, maior será a qualidade do computador. Todos os 
+valores ai são distintos. O mesmo ocorre para todos os valores de bi.
+Saída
+Para cada caso de teste, imprima YES se a hipótese de Valéria for válida, ou NO, caso contrário.
+Casos de Teste
+Entrada Saída
+2
+1 2
+2 1
+YES
+
