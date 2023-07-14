@@ -6,10 +6,9 @@ while(True):
 
     i = 0
 
-    while( i/2 < n):
-        i += 1    
-        computador = input()
-        computadores.append(computador.split())
+    for i in range(n): 
+        computador = list(map(int, input().split()))
+        [computadores.append(s) for s in computador]
 
     splited = []
     len_l = len(computadores)
@@ -32,9 +31,11 @@ while(True):
 
     if(menor_pos == maior_pos):
         print("YES")
+        break
 
     else:
         print("NO")
+        break
 
 
 
