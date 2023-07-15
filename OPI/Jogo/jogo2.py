@@ -4,8 +4,6 @@ x = int(input())
 jogadas = 0
 
 i = 1
-z = 0
-
 if(x <= 5):
     print(1)
 
