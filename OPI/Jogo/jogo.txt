@@ -1,0 +1,18 @@
+Os integrantes do PET Computação, que é coordenado pelo Prof. Marcelo, vão jogar um novo 
+jogo e precisam de sua ajuda. O avatar está na posição inicial 0, e poderá em cada rodada 
+mover 1, 2, 3, 4 ou 5 posições para frente. O avatar deverá chegar ao destino localizado na 
+posição x (x > 0). 
+Sua tarefa é ajudar os integrantes do PET Computação a descobrirem a quantidade mínima 
+de rodadas necessárias para o avatar sair da posição inicial e chegar na posição final x.
+Entrada
+Cada caso de teste contém uma linha com um número inteiro x (1 ≤ x ≤ 106
+).
+Saída
+Para cada caso de teste, imprima o número mínimo de rodadas necessárias para o avatar sair 
+da posição inicial e chegar no destino.
+Casos de Teste:
+
+12    3
+
+
+5     1
