@@ -1,0 +1,31 @@
+Problema H. Backup
+Nome do Programa: H.(c|cpp|java|py2|py3)
+Tempo: 3 segundos
+Hyggo é diretor do Virtus, que fica localizado em Campina Grande e possui vários projetos de 
+software e hardware em parceria com empresas nacionais e internacionais. Em um dos seus 
+projetos, ele teve um problema com um backup e perdeu os dados de um array muito
+importante. Mas ele sabe algumas propriedades do array:
+• Todos os números no array são inteiros e estão no intervalo de l e r (inclusos);
+• A soma de todos os elementos do array é divisível por 3.
+A sua tarefa é ajudar Hyggo a identificar quantas possibilidades de array podem existir 
+considerando essas propriedades. Como o número de possibilidades pode ser grande, as 
+repostas devem ser dadas usando o módulo 109
++7. Caso não exista esse tipo de array, imprima 
+0.
+Entrada
+Cada caso de teste contém uma linha contendo três números inteiros n, l, r (1 ≤ n ≤ 2*105
+, 1 
+≤ l ≤ r ≤ 109
+) representando o número de elementos do array, e o intervalo l e r dos possíveis 
+valores dos elementos do array, respectivamente.
+Saída
+Para cada caso de teste, imprima quantas possibilidades de array podem existir considerando 
+essas propriedades usando o módulo 109
++7.
+Casos de Teste
+Entrada Saída
+2 1 3 3
+Entrada Saída
+3 2 2 1
+Entrada Saída
+9 9 99 711426616
