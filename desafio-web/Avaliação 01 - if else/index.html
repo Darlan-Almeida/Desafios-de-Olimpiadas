@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV 01 - TSI </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <span> Avaliação 01 - IF e ELSE</span>
+        </div>
+        <hr>
+    </main>
+
+    <!-- Questão 01-->
+    <section>
+        <p>
+            1. Desenvolva um algorítimo que receba 3 números inteiros diferentes e os imprima em ordem decrescente. 
+        </p>
+
+        <div>
+            <label for="q1_nr_01">Número 01</label>
+            <input type="number" id="q1_nr_01" name="q1_nr_01"value="0">
+            <br><br>
+            <label for="q1_nr_02">Número 02</label>
+            <input type="number" id="q1_nr_02" name="q1_nr_02" value="0">
+            <br><br>
+            <label for="q1_nr_03">Número 03</label>
+            <input type="number" id="q1_nr_03" name="q1_nr_03" value="0">
+            <br><br>
+            <div class="botao">
+                <input onclick='q_01()' type="button" value="# Processar #">
+            </div>
+            
+            <hr>
+        </div>
+    </section>
+
+    <!-- Questão 02-->
+    <section>
+        <p>
+            2. Desenvolva um algorítimo que receba 6 números inteiros em imprima quantos são iguais.
+        </p>
+
+        <div>
+            <label for="q2_nr_01">Número 01</label>
+            <input type="number" id="q2_nr_01" name="q2_nr_01" value="0">
+            <br><br>
+            <label for="q2_nr_02">Número 02</label>
+            <input type="number" id="q2_nr_02" name="q2_nr_02"value="0">
+            <br><br>
+            <label for="q2_nr_03">Número 03</label>
+            <input type="number" id="q2_nr_03" name="q2_nr_03" value="0">
+            <br><br>
+            <label for="q2_nr_04">Número 04</label>
+            <input type="number" id="q2_nr_04" name="q2_nr_04" value="0">
+            <br><br>
+            <label for="q2_nr_05">Número 05</label>
+            <input type="number" id="q2_nr_05" name="q2_nr_05" value="0">
+            <br><br>
+            <label for="q2_nr_06">Número 06</label>
+            <input type="number" id="q2_nr_06" name="q2_nr_06"value="0">
+            <br><br>
+            <div class="botao">
+                <input onclick='q_02()' type="button" value="# Processar #">
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Questão 03-->
+    <section>
+        <p>
+            3. Desenvolva o algoritmo que receba o valor a ser pago por um 
+            produto e a forma de pagamento. Utilize os seguintes caracteres 
+            para identificar a forma de pagamento: <b>C</b> para cartão, <b>P</b> para PIX e <b>D</b> para dinheiro. Após o preenchimento dos campos, imprima o valor a ser pago aplicando os seguintes descontos:
+        </p>
+
+        <ol type="a">
+            <li>10% para pagamento no cartão.</li>
+            <li>20% para pagamento no PIX.</li>
+            <li>30% para pagamento em dinheiro.</li>
+        </ol>
+
+        <div>
+            <label for="valor">Valor :</label>
+            <input type="number" id="valor" name="valor" value="0">
+            <br><br>
+            <label for="forma">Forma:</label>
+            <input type="text" id="forma" name="forma" value="C">
+            <br><br>
+            <div class="botao">
+                <input onclick='q_03()'' type="button" value="# Processar #">
+            </div>
+            
+            <hr>
+        </div>
+    </section>
+
+     <!-- Questão 04-->
+     <section>
+        <p>
+            4. Em um determinado campeonato, ao cadastrar o atleta devemos 
+            informa a organização qual categoria ele irá competir de acordo 
+            com a sua idade. Desenvolva um algoritmo que receba o nome e 
+            idade do atleta e em seguida imprima seu nome seguido da 
+            categoria na qual ele ira competir. Utilize a tabela abaixo no 
+            seu algoritmo.
+        </p>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>Condição</th>
+                </tr>
+                <tr>
+                    <td>5 até 7</td>
+                    <td>Infantil A</td>
+                </tr>
+
+                <tr>
+                    <td>8 até 10</td>
+                    <td>Infantil B</td>
+                </tr>
+
+                <tr>
+                    <td>11 até 13 </td>
+                    <td>Juvenil A</td>
+                </tr>
+
+                <tr>
+                    <td>14 até 17 </td>
+                    <td>Juvenil B</td>
+                </tr>
+
+                <tr>
+                    <td>Maior que 18</td>
+                    <td>Adulto</td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div>
+            <label for="nome">Nome :</label>
+            <input type="text" id="nome" name="nome" value="">
+            <br><br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" value="0">
+            <br><br>
+            <div class="botao">
+                <input onclick='q_04()'' type="button" value="# Processar #">
+            </div>
+            
+            <hr>
+        </div>
+    </section>
+    
+</body>
+</html>

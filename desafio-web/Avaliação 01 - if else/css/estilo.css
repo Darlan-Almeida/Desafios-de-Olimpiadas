@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=button]{
+    height: 50px;
+    width: 200px;
+    background-color: palegoldenrod;
+}
+
+p{
+    text-align: justify;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+table{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 20px;
+}
