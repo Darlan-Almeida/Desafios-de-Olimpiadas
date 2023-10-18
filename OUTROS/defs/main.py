@@ -26,20 +26,24 @@ def  potencia(base, expoente):
 
 def idade_valida(idade):
     
-    if( idade == int(idade) and idade <= 150 and idade > 0):
+    if( idade == int(idade) and idade <= 150 and idade >= 0):
         return True
     else:
         return False
 
 def validar_email(email):
     position_at = None
+    position_dominio = None
+    position_dns = email[-4::]
     for index , i in enumerate(email):
         if( i == "@"):
             position_at = index + 1
-            
-    domain= email[position_at:]
+            position_dominio = email[position_at]
+    
+    if( "@" not in email):
+        return False
 
-    if(domain == "email.com"):
+    elif( position_dominio != " "  and  position_dominio != "." and position_dns == ".com"):
         return True
     else:
         return False
@@ -72,12 +76,13 @@ def maior_numero(a , b , c):
 def contagem_letras(entrada):
     upper = 0
     lower = 0
+    numbers = ["0" , "1" ,"2" ,"3" , "4" ,"5" , "6" , "7" ,"8", "9"]
 
     for i in entrada:
-        if(i == i.upper()):
+        if(i == i.upper() and i != ' ' and i not in numbers):
             upper += 1
 
-        else:
+        if(i == i.lower() and i != ' ' and i not in numbers):
             lower += 1
     return upper , lower
 
@@ -116,4 +121,82 @@ def max_custom(lista_numeros):
                     more = lista_numeros[elements - 1]
 
         return more
+
+
+def min_custom(lista_numeros):
+    min_number = None
+    elements = 0
+
+    for i in lista_numeros:
+        elements += 1
+
+    for index , i in enumerate(lista_numeros):
+        if(elements >= 1):
+            if(index < elements - 1):
+                if(lista_numeros[index] < lista_numeros[index + 1]):
+                    min_number = lista_numeros[index]
+                else:
+                    min_number = lista_numeros[elements - 1]
+        
+        return min_number
+
+def startswith_custom(string , prefixo):
+    elements = 0
+
+    for i in prefixo:
+        elements += 1
+
+    if(string[0:elements] == prefixo):
+        return True
+    else:
+        return False
+
+def endswith_custom(string, sufixo):
+    elements = 0
+
+    for i in sufixo:
+        elements -= 1
+
+    if(string[elements::] == sufixo):
+        return True
+    else:
+        return False   
+
+def split_custom(string , caractere):
+    lista = []
+    inicio = 0
+    fim = 0
+    position_caractere = 0
+    
+    for index , i in enumerate(string):
+        if( i == caractere):
+            position_caractere = index + 1
+            fim = index
+            lista.append(string[inicio:fim])
+            inicio += fim + 1
+        
+    
+    lista.append(string[position_caractere:])
+    return(lista)  
+
+def strip_custom(string, caracteres_remover):
+    word = ''
+    for index , i in enumerate(string):
+        if(i not in caracteres_remover):
+            word += string[index] 
+    return word
+
+def replace_custom(string, substring_antiga, substring_nova):
+    nova_string = ""
+    i = 0
+
+    while i < len(string):
+        if string[i:i + len(substring_antiga)] == substring_antiga:
+            nova_string += substring_nova
+            i += len(substring_antiga)
+        else:
+            nova_string += string[i]
+            i += 1
+
+    return nova_string
 
