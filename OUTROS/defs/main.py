@@ -200,3 +200,54 @@ def replace_custom(string, substring_antiga, substring_nova):
 
     return nova_string
 
+def sum_list(*args):
+    result = 0
+    for i in args:
+        result += i
+
+    return result
+
+def quantity_elements(*args):
+    
+    """ The function count the elements parametrize
+
+    Args:
+        *args : this is all elements parametrize
+
+    Returns:
+        int : return a quantity of elements in the list
+    
+    
+    """
+
+    quantity = 0
+    for i in args:
+        quantity += 1
+    return quantity
+
+def test_scope_function():
+    temperatura = 30
+    def ligar_ar():
+        temperatura = 20
+
+    ligar_ar()
+    print(temperatura)
+
+def use_filter(*args):
+    return filter( lambda args : args % 2 == 0 , args)
+
+
+def use_uppers(*args)
+    uppers = map(lambda x: x[0].upper() + x[1::], args)
+    print(list(uppers)) 
+
+
+def use_global():
+    temperatura = 30
+    def ligar_ar():
+        global temperatura
+        temperatura = 20
+
+    ligar_ar()
+    print(temperatura)
+
