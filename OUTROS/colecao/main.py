@@ -1,9 +1,6 @@
 from random import random, randint
 
 
-
-
-
 """Faça um programa que preencha por leitura um vetor de 5 posições, e informe a posição em que um valor x (lido do teclado) está no vetor. Caso o valor x não seja encontrado, o
 programa deve imprimir o valor -1 
 - Crie uma lista de 5 elementos e preencha com uma iteração sobre a lista com valores lidos do teclado
@@ -45,21 +42,23 @@ def dice():
 
     print(quantity_number)
 
-#fazendo...
+"""- Vetor original [2, 1, 20,5, 17,19,14,4, 18,2]
+- Vetor manipulado [2, 3, 25,35,82,166, 327, 644, 1302,2588]"""
 def list_manipulation():
     list_random =  [2, 1, 20,5, 17,19,14,4, 18,2]
     list_manipulated = []
-    for_index = 0
     new_numero = int()
 
-    for index, i in enumerate(list_random):
+    for index, valor in enumerate(list_random):
         if(index == 0):
-            list_manipulated.append(i)
-        for j in list_manipulated:
-            if(index >= for_index):
-                for_index += 1
-                new_numero = i + j
-                list_manipulated.append(new_numero)
+            list_manipulated.append(valor)
+        else:
+            for valor2 in list_manipulated:
+                new_numero += valor2
+
+            list_manipulated.append(new_numero + valor)
+            new_numero = 0    
+
                 
                 
     print(list_random)
