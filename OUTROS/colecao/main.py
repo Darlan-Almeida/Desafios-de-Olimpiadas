@@ -199,4 +199,97 @@ def list_tupls():
     list_manipulated.append(som_tupls)
     print(list_manipulated)
 
-list_tupls()
+"""8 - Problema: Compra e Venda de Ações
+Você recebe uma lista prices onde prices[i] é o preço de uma determinada ação no dia i. Você deseja maximizar seu lucro escolhendo um dia para comprar uma ação e escolhendo um dia diferente no futuro para vender essa ação. Retorne o lucro máximo que você pode obter com essa transação. Se não for possível obter lucro algum, retorne 0.
+
+
+Exemplo 1:
+
+Entrada: prices = [7,1,5,3,6,4]
+
+Saída: 5
+
+Explicação: Compre no dia 2 (preço = 1) e venda no dia 5 (preço = 6), lucro = 6-1 = 5. Observe que comprar no dia 2 e vender no dia 1 não é permitido, pois você deve comprar antes de vender.
+
+Exemplo 2:
+
+Entrada: prices = [7,6,4,3,1]
+
+Saída: 0
+
+Explicação: Neste caso, nenhuma transação é realizada e o lucro máximo é 0."""
+
+def calc_price():
+
+    price = [7,1,5,3,6,4]
+
+
+    min_price = price[0]
+
+    max_price = 0
+
+    index_min_price = 0
+    index_max_price = 0
+
+
+    for index, i in enumerate(price):
+        if(i < min_price):
+            min_price = i
+            index_min_price = index
+        if(i > max_price and index > index_max_price and index != 0):
+            max_price = i
+            index_max_price = index
+
+    if(index_max_price > index_min_price):
+        print(max_price - min_price)
+    else:
+        print(0)
+
+
+def sum_digit_list():
+    digits = [ 9 ]
+
+    size = len(digits)
+
+    number = ""
+
+    list_number = []
+
+    for index,i in enumerate(digits):
+        number += str(i)
+
+    if(size == index+1):
+        number = int(number)+1
+        
+
+
+    for i in str(number):
+        list_number.append(int(i))
+
+
+    print(list_number)
+
+'''Dado o nó inicial de uma lista ligada ordenada, exclua todos os duplicados de forma que cada elemento apareça apenas uma vez. Retorne a lista ligada também ordenada.
+
+Exemplo: 
+
+Input: head = [1,1,2]
+
+Output: [1,2]'''
+
+
+def order_remove():
+    digits = [ 3,1 , 1 , 2 , 3 , 3]
+
+    for index,i in enumerate(digits):
+       for index2 , j in enumerate(digits):
+            if(i == j and index != index2):
+                digits.pop(index2)
+
+    digits.sort()
+
+    print(digits)
+
+
+order_remove()
+
