@@ -7,7 +7,7 @@ public class SelectionSort<T extends Comparable<T>> implements Sorting<T>{
 
         for(int j = 0 ; j < elements.length; j++){
             int idx_menor = j;
-            for(int i = idx_menor ; i < elements.length; i++){
+            for(int i = idx_menor + 1; i < elements.length; i++){
                 if(elements[i].compareTo(elements[idx_menor]) < 0){
                     idx_menor = i;
                 }
