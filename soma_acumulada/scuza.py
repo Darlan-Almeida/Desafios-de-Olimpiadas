@@ -29,6 +29,7 @@ while t > 0:
     acumulador = [0 for i in distintos_unicos]
     maior_encontrado = 0
     pos_maior = -1
+    
     for i in range(n):
         valor = degraus[i] + degraus[i - 1] if i > 0 else degraus[i]
         if degraus[i] > maior_encontrado:
@@ -40,6 +41,11 @@ while t > 0:
             acumulador[pos] = valor
         
         degraus[i] = valor
+        
+        
+    for i in range(1 ,len(distintos_unicos)):
+        if acumulador[i] == 0:
+            acumulador[i] += acumulador[i - 1]
 
     result = []
     for i in questions:
@@ -52,22 +58,9 @@ while t > 0:
             else:
                 result.append(0)
     
+    for i in range(1 , q):
+        if result[i] == 0:
+            result[i] = result[i-1]
+
     print(*result)
 
-
-#alternativa usado dict
-
-"""while t > 0:
-    t -= 1
-    n , q = map(int , input().split())
-    degraus = list(map(int , input().split()))
-    questions = list(map(int , input().split()))
-
-    distintos = {}
-    for i in range(1 , n):
-        valor = degraus[i] + degraus[i - 1]
-        distintos[degraus[i]] =  valor
-        degraus[i] = valor
- 
-    # transforma distito em uma lista faz a bs e referencia o valor armazenado em outra lista
-"""
