@@ -6,7 +6,6 @@ def bs(alvo , a):
 
     while l <= r:
         meio = (l+r) // 2
-
         if a[meio] == alvo:
             return meio
         elif a[meio] > alvo:
@@ -23,9 +22,9 @@ while t > 0:
     questions = list(map(int , input().split()))
 
     distintos_unicos = sorted(degraus)
-    """for i in range(n - 1 , 0 , -1):
+    for i in range(n - 1 , 0 , -1):
         if distintos_unicos[i] == distintos_unicos[i-1]:
-            distintos_unicos.remove(distintos_unicos[i]) """
+            distintos_unicos.remove(distintos_unicos[i]) 
     
     acumulador = [0 for i in distintos_unicos]
     maior_encontrado = 0
@@ -37,8 +36,9 @@ while t > 0:
             pos_maior = i
         
         pos = bs(maior_encontrado, distintos_unicos)
-        acumulador[pos] = valor
-    
+        if pos > - 1:
+            acumulador[pos] = valor
+        
         degraus[i] = valor
 
     result = []
@@ -47,28 +47,12 @@ while t > 0:
             result.append(0)
         else:
             pos = bs(i , distintos_unicos)
-            result.append(acumulador[pos])
+            if pos > -1:
+                result.append(acumulador[pos])
+            else:
+                result.append(0)
     
     print(*result)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #alternativa usado dict
