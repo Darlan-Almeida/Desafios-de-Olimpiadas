@@ -10,8 +10,9 @@ def eh_primo(n):
 
         i += 2
     return False
-        
-if eh_primo(entrada - 2):
-    print(2 , entrada - 2)
+
+x = entrada - 2
+if eh_primo(x) and x > 2:
+    print(2 , x)
 else:
     print(-1)

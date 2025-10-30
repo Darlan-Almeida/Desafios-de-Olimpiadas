@@ -42,7 +42,6 @@ while t > 0:
         
         degraus[i] = valor
         
-        
     for i in range(1 ,len(distintos_unicos)):
         if acumulador[i] == 0:
             acumulador[i] += acumulador[i - 1]
@@ -58,9 +57,4 @@ while t > 0:
             else:
                 result.append(0)
     
-    for i in range(1 , q):
-        if result[i] == 0:
-            result[i] = result[i-1]
-
     print(*result)
-
