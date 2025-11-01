@@ -1,0 +1,1 @@
+{"name":"Local: solucao","url":"/home/darlan/Desafios-de-Olimpiadas/ad-hoc/breed_counting/solucao.py","tests":[{"id":1761865747020,"input":"6 3\n2\n1\n1\n3\n2\n1\n1 6\n3 3\n2 4","output":"3 2 1\n1 0 0\n2 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/darlan/Desafios-de-Olimpiadas/ad-hoc/breed_counting/solucao.py","group":"local","local":true}
